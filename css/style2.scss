@@ -1,15 +1,20 @@
 
-
-body{
-    margin: 0;
+@function fishfunc ($type, $attribute, $attributenumber){
+    @return map-get(map-get(map-get($bassfish, $type), $attribute),$attributenumber);
 }
+
+@function fishsalt ($type){
+    @return map-get(map-get($bassfish, $type),salt);
+}
+
+
 
 $bassfish:(
     assian:(
         size:(
-            large: 50,
-            small: 20,
-            medium: 35,
+            1: 500px,
+            2: 200px,
+            3: 350px,
         ),
         color:(
             1: gold,
@@ -21,9 +26,9 @@ $bassfish:(
     ),
     black:(
         size:(
-            large: 60,
-            small: 40,
-            medium: 50,
+            1: 600px,
+            2: 400px,
+            3: 500px,
         ),
         color:(
             1: gold,
@@ -35,9 +40,9 @@ $bassfish:(
     ),
     temperature:(
         size:(
-            large: 20,
-            small: 5,
-            medium: 10,
+            1: 200px,
+            2: 50px,
+            3: 100px,
         ),
         color:(
             1: yellow,
@@ -49,6 +54,63 @@ $bassfish:(
     )
 );
 
+body{
+    margin: 0;
+}
+
+
 #jon{
-    background: radial-gradient(black,white);
+    background-color: magenta;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin fish($size, $color, $salt) {
+    @if $salt == true {
+        border: dotted limegreen 4px;
+    } @else {
+        border: white solid 2px;
+    }
+    height: $size/2;
+    width: $size;
+    background-color: $color;
+    border-radius: 30%;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: magenta;
+}
+
+
+#fish1{
+    @include fish(fishfunc(assian, size, 1), fishfunc(assian, color, 3), fishsalt(assian))
+}
+
+#fish2{
+    @include fish(fishfunc(temperature, size, 3), fishfunc(temperature, color, 2), fishsalt(temperature))
+}
+
+#fish3{
+    @include fish(fishfunc(black, size, 3), fishfunc(black, color, 3), fishsalt(black))
+}
+
+#fish4{
+    @include fish(fishfunc(black, size, 2), fishfunc(black, color, 1), fishsalt(black))
+}
+
+#fish5{
+    @include fish(fishfunc(temperature, size, 2), fishfunc(temperature, color, 1), fishsalt(temperature))
+}
+
+#fish6{
+    @include fish(fishfunc(black, size, 1), fishfunc(black, color, 4), fishsalt(black))
+}
+
+#fish7{
+    @include fish(fishfunc(assian, size, 3), fishfunc(assian, color, 4), fishsalt(assian))
+}
+
+#fish8{
+    @include fish(fishfunc(assian, size, 1), fishfunc(assian, color, 1), fishsalt(assian))
 }
