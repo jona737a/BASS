@@ -1,5 +1,5 @@
 #patpus {
-  background: radial-gradient(white, black);
+  background: radial-gradient(purple, pink);
   display: flex;
   flex-wrap: wrap;
 }
@@ -15,7 +15,7 @@
 
 #bass2 {
   border: dotted goldenrod 4px;
-  content: "4";
+  content: "6";
   background-color: brown;
   width: 400px;
   height: 100px;
@@ -60,7 +60,7 @@
 
 #bass7 {
   border: dotted goldenrod 4px;
-  content: "4";
+  content: "5";
   background-color: beige;
   width: 400px;
   height: 100px;

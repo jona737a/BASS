@@ -1,5 +1,5 @@
 #patpus{
-    background: radial-gradient(white, black);
+    background: radial-gradient(purple, pink);
     display: flex;
     flex-wrap: wrap;
 }
@@ -71,7 +71,7 @@ $bassbass:(
     @include bassmix(bassfunc(Fender, strings, 4), bassfunc(Fender, color, 3), bassamerican(Fender));
 }
 #bass2{
-    @include bassmix(bassfunc(Fender, strings, 4), bassfunc(Fender, color, 2), bassamerican(Fender));
+    @include bassmix(bassfunc(Fender, strings, 6), bassfunc(Fender, color, 2), bassamerican(Fender));
 }
 #bass3{
     @include bassmix(bassfunc(MusicMan, strings, 5), bassfunc(MusicMan, color, 1), bassamerican(MusicMan));
@@ -86,7 +86,7 @@ $bassbass:(
     @include bassmix(bassfunc(Squire, strings, 4), bassfunc(Squire, color, 1), bassamerican(Squire));
 }
 #bass7{
-    @include bassmix(bassfunc(Fender, strings, 4), bassfunc(Fender, color, 1), bassamerican(Fender));
+    @include bassmix(bassfunc(Fender, strings, 5), bassfunc(Fender, color, 1), bassamerican(Fender));
 }
 #bass8{
     @include bassmix(bassfunc(Squire, strings, 4), bassfunc(Squire, color, 2), bassamerican(Squire));
