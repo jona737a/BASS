@@ -14,7 +14,7 @@ H1 {
 }
 
 #jon {
-  background: repeating-radial-gradient(purple 80%, pink);
+  background: repeating-radial-gradient(purple, pink, firebrick, darkseagreen, gold, papayawhip, plum, mintcream, darkolivegreen, salmon, chocolate, aquamarine, lemonchiffon, blueviolet, darkkhaki);
   display: flex;
   flex-wrap: wrap;
 }
