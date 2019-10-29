@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 @function fishfunc ($type, $attribute, $attributenumber){
     @return map-get(map-get(map-get($bassfish, $type), $attribute),$attributenumber);
@@ -56,6 +57,16 @@ $bassfish:(
 
 body{
     margin: 0;
+    font-family: roboto;
+}
+
+H1{
+    font-size: 50px;
+    padding: 0 0 0 20px;
+    margin: 0;
+    font-weight: 999;
+    letter-spacing: 450px;
+    background: repeating-radial-gradient(red,yellow, green);
 }
 
 
