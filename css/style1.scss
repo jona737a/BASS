@@ -2,12 +2,20 @@
     background: radial-gradient(white, black);
 }
 
+@function bassfunc ($bass-name, $bass-spec, $spec){
+    @return map-get(map-get(map-get($bassbass, $bass-name),$bass-spec),$spec);
+}
+
+@function bassamerican ($bass-name){
+    @return map-get(map-get($bassbass, $bass-name),American);
+}
+
 $bassbass:(
     Fender:(
         strings:(
-            4: "4",
-            5: "5",
-            6: "6",
+            4: '4',
+            5: '5',
+            6: '6',
         ),
         color:(
             1: beige,
@@ -18,9 +26,9 @@ $bassbass:(
     ),
     MusicMan:(
         strings:(
-            4: "4",
-            5: "5",
-            6: "6",
+            4: '4',
+            5: '5',
+            6: '6',
         ),
         color:(
             1: beige,
@@ -30,10 +38,10 @@ $bassbass:(
         American: true
     ),
     Squire:(
-        Strings:(
-            4: "4",
-            5: "5",
-            6: "6",
+        strings:(
+            4: '4',
+            5: '5',
+            6: '6',
         ),
         color: (
             1: beige,
@@ -43,3 +51,41 @@ $bassbass:(
         American: false
     )
 ); 
+
+@mixin bassmix ($strings, $color, $american) {
+    @if $american {
+        border: dotted goldenrod 4px;
+    } @else {
+        border: dotted silver 4px;
+    }
+    content: $strings;
+    background-color: $color;
+    width: 400px;
+    height: 100px;
+    margin: 15px 0 15px 0;
+}
+
+#bass1{
+    @include bassmix(bassfunc(Fender, strings, 4), bassfunc(Fender, color, 3), bassamerican(Fender));
+}
+#bass2{
+    @include bassmix(bassfunc(Fender, strings, 4), bassfunc(Fender, color, 2), bassamerican(Fender));
+}
+#bass3{
+    @include bassmix(bassfunc(MusicMan, strings, 5), bassfunc(MusicMan, color, 1), bassamerican(MusicMan));
+}
+#bass4{
+    @include bassmix(bassfunc(MusicMan, strings, 6), bassfunc(MusicMan, color, 1), bassamerican(MusicMan));
+}
+#bass5{
+    @include bassmix(bassfunc(Squire, strings, 4), bassfunc(Squire, color, 3), bassamerican(Squire));
+}
+#bass6{
+    @include bassmix(bassfunc(Squire, strings, 4), bassfunc(Squire, color, 1), bassamerican(Squire));
+}
+#bass7{
+    @include bassmix(bassfunc(Fender, strings, 4), bassfunc(Fender, color, 1), bassamerican(Fender));
+}
+#bass8{
+    @include bassmix(bassfunc(Squire, strings, 4), bassfunc(Squire, color, 2), bassamerican(Squire));
+}
