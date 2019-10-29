@@ -1,5 +1,5 @@
 #patpus {
-  background: radial-gradient(purple, pink);
+  background: repeating-radial-gradient(purple 80%, pink);
   display: flex;
   flex-wrap: wrap;
 }
