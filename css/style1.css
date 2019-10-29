@@ -1,5 +1,7 @@
 #patpus {
   background: radial-gradient(white, black);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #bass1 {
@@ -8,7 +10,7 @@
   background-color: red;
   width: 400px;
   height: 100px;
-  margin: 15px 0 15px 0;
+  margin: 15px 10px 15px 10px;
 }
 
 #bass2 {
@@ -17,7 +19,7 @@
   background-color: brown;
   width: 400px;
   height: 100px;
-  margin: 15px 0 15px 0;
+  margin: 15px 10px 15px 10px;
 }
 
 #bass3 {
@@ -26,7 +28,7 @@
   background-color: beige;
   width: 400px;
   height: 100px;
-  margin: 15px 0 15px 0;
+  margin: 15px 10px 15px 10px;
 }
 
 #bass4 {
@@ -35,7 +37,7 @@
   background-color: beige;
   width: 400px;
   height: 100px;
-  margin: 15px 0 15px 0;
+  margin: 15px 10px 15px 10px;
 }
 
 #bass5 {
@@ -44,7 +46,7 @@
   background-color: red;
   width: 400px;
   height: 100px;
-  margin: 15px 0 15px 0;
+  margin: 15px 10px 15px 10px;
 }
 
 #bass6 {
@@ -53,7 +55,7 @@
   background-color: beige;
   width: 400px;
   height: 100px;
-  margin: 15px 0 15px 0;
+  margin: 15px 10px 15px 10px;
 }
 
 #bass7 {
@@ -62,7 +64,7 @@
   background-color: beige;
   width: 400px;
   height: 100px;
-  margin: 15px 0 15px 0;
+  margin: 15px 10px 15px 10px;
 }
 
 #bass8 {
@@ -71,7 +73,7 @@
   background-color: brown;
   width: 400px;
   height: 100px;
-  margin: 15px 0 15px 0;
+  margin: 15px 10px 15px 10px;
 }
 
 /*# sourceMappingURL=style1.css.map */
