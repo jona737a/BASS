@@ -1,0 +1,54 @@
+
+
+body{
+    margin: 0;
+}
+
+$bassfish:(
+    assian:(
+        size:(
+            large: 50,
+            small: 20,
+            medium: 35,
+        ),
+        color:(
+            1: gold,
+            2: black,
+            3: brown,
+            4: red,
+        ),
+        salt: true
+    ),
+    black:(
+        size:(
+            large: 60,
+            small: 40,
+            medium: 50,
+        ),
+        color:(
+            1: gold,
+            2: grey,
+            3: orange,
+            4: red,
+        ),
+        salt: false
+    ),
+    temperature:(
+        size:(
+            large: 20,
+            small: 5,
+            medium: 10,
+        ),
+        color:(
+            1: yellow,
+            2: black,
+            3: grey,
+            4: blue,
+        ),
+        salt: true
+    )
+);
+
+#jon{
+    background: radial-gradient(black,white);
+}

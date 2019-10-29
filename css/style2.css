@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+}
 
+#jon {
+  background: radial-gradient(black, white);
+}
 
 /*# sourceMappingURL=style2.css.map */
