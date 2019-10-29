@@ -3,7 +3,7 @@ body {
 }
 
 #jon {
-  background-color: magenta;
+  background: repeating-radial-gradient(purple 80%, pink);
   display: flex;
   flex-wrap: wrap;
 }
