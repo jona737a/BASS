@@ -1,0 +1,45 @@
+#patpus{
+    background: radial-gradient(white, black);
+}
+
+$bassbass:(
+    Fender:(
+        strings:(
+            4: "4",
+            5: "5",
+            6: "6",
+        ),
+        color:(
+            1: beige,
+            2: brown,
+            3: red,
+        ),
+        American: true 
+    ),
+    MusicMan:(
+        strings:(
+            4: "4",
+            5: "5",
+            6: "6",
+        ),
+        color:(
+            1: beige,
+            2: brown,
+            3: red,
+        ),
+        American: true
+    ),
+    Squire:(
+        Strings:(
+            4: "4",
+            5: "5",
+            6: "6",
+        ),
+        color: (
+            1: beige,
+            2: brown,
+            3: red,
+        ),
+        American: false
+    )
+); 
