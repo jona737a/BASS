@@ -6,74 +6,130 @@
 
 #bass1 {
   border: dotted goldenrod 4px;
-  content: "4";
   background-color: red;
   width: 400px;
   height: 100px;
   margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+}
+
+#bass1::after {
+  content: "4";
 }
 
 #bass2 {
   border: dotted goldenrod 4px;
-  content: "6";
   background-color: brown;
   width: 400px;
   height: 100px;
   margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+}
+
+#bass2::after {
+  content: "6";
 }
 
 #bass3 {
   border: dotted goldenrod 4px;
-  content: "5";
   background-color: beige;
   width: 400px;
   height: 100px;
   margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+}
+
+#bass3::after {
+  content: "5";
 }
 
 #bass4 {
   border: dotted goldenrod 4px;
-  content: "6";
   background-color: beige;
   width: 400px;
   height: 100px;
   margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+}
+
+#bass4::after {
+  content: "6";
 }
 
 #bass5 {
   border: dotted silver 4px;
-  content: "4";
   background-color: red;
   width: 400px;
   height: 100px;
   margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+}
+
+#bass5::after {
+  content: "4";
 }
 
 #bass6 {
   border: dotted silver 4px;
-  content: "4";
   background-color: beige;
   width: 400px;
   height: 100px;
   margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+}
+
+#bass6::after {
+  content: "4";
 }
 
 #bass7 {
   border: dotted goldenrod 4px;
-  content: "5";
   background-color: beige;
   width: 400px;
   height: 100px;
   margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+}
+
+#bass7::after {
+  content: "5";
 }
 
 #bass8 {
   border: dotted silver 4px;
-  content: "4";
   background-color: brown;
   width: 400px;
   height: 100px;
   margin: 15px 10px 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: magenta;
+}
+
+#bass8::after {
+  content: "5";
 }
 
 /*# sourceMappingURL=style1.css.map */

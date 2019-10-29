@@ -60,34 +60,68 @@ $bassbass:(
     } @else {
         border: dotted silver 4px;
     }
-    content: $strings;
     background-color: $color;
     width: 400px;
     height: 100px;
     margin: 15px 10px 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: magenta;
 }
 
 #bass1{
     @include bassmix(bassfunc(Fender, strings, 4), bassfunc(Fender, color, 3), bassamerican(Fender));
 }
+#bass1::after{
+    content: bassfunc(Fender, strings, 4);
+}
+
 #bass2{
     @include bassmix(bassfunc(Fender, strings, 6), bassfunc(Fender, color, 2), bassamerican(Fender));
 }
+#bass2::after{
+    content: bassfunc(Fender, strings, 6);
+}
+
 #bass3{
     @include bassmix(bassfunc(MusicMan, strings, 5), bassfunc(MusicMan, color, 1), bassamerican(MusicMan));
 }
+#bass3::after{
+    content: bassfunc(MusicMan, strings, 5);
+}
+
 #bass4{
     @include bassmix(bassfunc(MusicMan, strings, 6), bassfunc(MusicMan, color, 1), bassamerican(MusicMan));
 }
+#bass4::after{
+    content: bassfunc(MusicMan, strings, 6);
+}
+
 #bass5{
     @include bassmix(bassfunc(Squire, strings, 4), bassfunc(Squire, color, 3), bassamerican(Squire));
 }
+#bass5::after{
+    content: bassfunc(Squire, strings, 4);
+}
+
 #bass6{
     @include bassmix(bassfunc(Squire, strings, 4), bassfunc(Squire, color, 1), bassamerican(Squire));
 }
+#bass6::after{
+    content: bassfunc(Squire, strings, 4);
+}
+
 #bass7{
     @include bassmix(bassfunc(Fender, strings, 5), bassfunc(Fender, color, 1), bassamerican(Fender));
 }
+#bass7::after{
+    content: bassfunc(Fender, strings, 5);
+}
+
 #bass8{
-    @include bassmix(bassfunc(Squire, strings, 4), bassfunc(Squire, color, 2), bassamerican(Squire));
+    @include bassmix(bassfunc(Squire, strings, 5), bassfunc(Squire, color, 2), bassamerican(Squire));
+}
+#bass8::after{
+    content: bassfunc(Squire, strings, 5);
 }
