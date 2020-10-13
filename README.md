@@ -1,3 +1,3 @@
 ��# BASS
 
-One of my first attempts at a webshop iterface with working routerlinks.
+I small projekt were we tried colaborating trough github for the first time.
